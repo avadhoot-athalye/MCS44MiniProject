@@ -1,4 +1,4 @@
-# MCS44 - Mini Project
+# MCS44 - Mini Project (Simulation of UDP over IP)
 
 ## Steps to get the project running in the system
 1.  Switch to master branch if not already on it
