@@ -24,7 +24,7 @@ public class UDPServer {
       DatagramPacket packet = new DatagramPacket(buf, buf.length);
       for (int i = 2; i > 0; i--) {
         this.udpSocket.receive(packet);
-        String message1 = (new String(packet.getData())).trim();
+        String message1 = new String(packet.getData(), packet.getOffset(), packet.getLength());
         finalMsg.append(message1).append(" ");
         System.out.println("Message from " + packet.getAddress().getHostAddress() + ":" + 
             packet.getPort() + 
